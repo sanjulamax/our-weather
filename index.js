@@ -61,6 +61,10 @@ btn.onclick = () => {
         return ;
     images.setAttribute("src" , "LOADING.gif") ;
     temp.innerHTML = "LOADING" ;
+    states.innerHTML = ``
+    humidi.innerHTML  =``
+    wind.innerHTML  = ``
+                
         
 
 
