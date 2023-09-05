@@ -11,6 +11,14 @@ const humidi = document.querySelector("#humidi") ;
 const humidicon = document.querySelector("#humidicon") ;
 const stateicon = document.querySelector("#stateicon") ;
 const windicon = document.querySelector("#humidicon") ;
+const creator = document.querySelector('#pre') ;
+
+
+
+function loading () {
+
+    temp.innerHTML = "NOTHING FOUND"
+}
 
 
 
@@ -51,15 +59,10 @@ btn.onclick = () => {
 
     if(city == "")
         return ;
-        temp.innerHTML = "LOADING" ;
-        temp.innerHTML = ` NOTHING FOUND`
+    images.setAttribute("src" , "LOADING.gif") ;
+    temp.innerHTML = "LOADING" ;
         
 
-
-      
-
-        
-        
 
 
     console.log(4) ;
@@ -72,6 +75,13 @@ btn.onclick = () => {
             if(json.cod == "404" ) {
 
                 images.setAttribute("src" , "404.png") ;
+
+                temp.innerHTML = "NOTHING FOUND"
+
+                
+                states.innerHTML = ``
+                humidi.innerHTML  =``
+                wind.innerHTML  = ``
                 
 
             }
@@ -106,6 +116,7 @@ btn.onclick = () => {
             states.innerHTML = `STATES : ${json.weather[0].description}`
             humidi.innerHTML  =` HUMIDITY : ${json.main.humidity}`
             wind.innerHTML  = `  WIND SPEED : ${json.wind.speed} KM/H`
+            creator.innerHTML = "CREATED BY SANJULA"
 
         })
 
