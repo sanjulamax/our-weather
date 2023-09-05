@@ -1,0 +1,251 @@
+#base {
+
+    height: 550px; 
+    width: 450px;
+    
+    position: relative;
+    left: 50%;
+    top: 58%;
+    display: flex;
+    overflow: hidden;
+    transform: translate(-50% , -50%);
+    opacity: 1;
+    border: 3px solid rgb(255, 255, 255);
+    
+   background-color: white;
+    border-radius: 30px;
+    opacity: 0;
+    
+    transition: 3s ease;
+
+    
+    
+    
+    
+    
+
+}
+
+#search {
+
+    height: 60px;
+    width: 460px;
+    background-color: chartreuse;
+    position: absolute;
+    margin: -10px;
+
+   left: 50%;
+   top: 10%;
+   transform: translate(-50% , -50%);
+    
+    background-color :aliceblue;
+    border-radius: 50px;
+    border: 3px solid rgb(255, 255, 255);
+
+}
+
+#images {
+
+    height: 300px;
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+
+#otherInfo {
+
+    height: 300px;
+    width: 400px ;
+    padding: 10px;
+    position: absolute;
+    top: 24%;
+    left: 50%;
+    transform: translate(-50% ,  50%);
+    background-color :rgb(255, 255, 255);
+}
+
+#searchButton {
+
+    border: none;
+    background-color: rgb(0, 0, 0);
+    border-radius: 100px;
+    position: absolute;
+    height: 60px ;
+    width: 80px;
+
+   top: 0%;
+   left: 82%;
+   
+    
+}
+
+#searchButton:hover{
+
+    background-color: white;
+    color: black;
+    
+}
+
+
+#searchText::placeholder {
+
+    font-family: monospace;
+    
+}
+
+
+#searchText {
+
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    width:260px ;
+    height: 60px;
+    border-radius: 50px;
+    font-size: 30px;
+    border : none ;
+    outline: none; 
+    text-transform :uppercase;
+    
+
+    
+
+ 
+
+
+}
+
+#loc {
+    position: absolute ;
+    top: 50%;
+    left: 3%;
+}
+
+
+
+#searchBar {
+
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+   
+    
+    display: flex;
+    justify-content :space-between;
+
+    
+}
+    
+
+#images1::alt {
+    font-size: 25px;
+}
+
+
+
+body{
+
+    background-color: darkblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+
+#pre {
+
+    position: absolute;
+    top:  100%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 15px;
+    font-family :monospace;
+    font-weight: bolder;
+}
+
+#temp { 
+
+
+    font-family:monospace;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+
+
+}
+
+#states {
+
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    position:absolute;
+    top: 60%;
+    left: 10%;
+
+
+
+}
+
+#humidi {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    position:absolute;
+    top: 45%;
+    left: 10%;
+    
+   
+}
+
+#wind{
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    position:absolute;
+    top: 30%;
+    left: 10%;
+
+}
+
+#windicon{
+
+    position: absolute;
+    top: 36%;
+    left: 5%;
+    transition: 3s ease;
+    
+    
+    
+
+}
+
+#humidicon{
+
+    position: absolute;
+    top: 51%;
+    left: 5%;
+    transition: 3s ease;
+
+    
+}
+
+#stateicon{
+
+    position: absolute;
+    top: 67%;
+    left: 5%;
+    transition: 3s ease;
+    
+    
+
+    
+}
+
